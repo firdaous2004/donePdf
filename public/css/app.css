@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.max-w-2xl {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Success Message */
+.bg-green-500 {
+    background-color: #48bb78;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.bg-green-500:hover {
+    background-color: #38a169;
+}
+
+/* Button Styles */
+.bg-blue-500 {
+    background-color: #4299e1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.bg-blue-500:hover {
+    background-color: #3182ce;
+}
+
+.bg-yellow-500 {
+    background-color: #ecc94b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.bg-yellow-500:hover {
+    background-color: #d69e2e;
+}
+
+.bg-red-500 {
+    background-color: #f56565;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.bg-red-500:hover {
+    background-color: #e53e3e;
+}
+
+/* Form Styles */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #4299e1;
+    outline: none;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f7fafc;
+    font-weight: bold;
+}
+
+td {
+    background-color: white;
+}
+
+td a,
+td button {
+    text-decoration: none;
+    display: inline-block;
+}
+
+form {
+    display: inline;
+}
+
+/* Hover Effect for Table Rows */
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Flexbox Helper Classes */
+.flex {
+    display: flex;
+}
+
+.space-x-4 {
+    gap: 1rem;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .max-w-2xl {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
