@@ -7,18 +7,56 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Gestion des Tâches avec Laravel 10
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Ce projet est une application de gestion des tâches développée avec Laravel 10. Il permet la création, la mise à jour, la suppression et l'organisation des tâches par catégories et priorités. Il inclut également des fonctionnalités d'authentification, de génération de PDF et d'exportation/importation de fichiers CSV.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+##Fonctionnalités
+. Gestion des tâches (CRUD)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+. Gestion des catégories
 
-## 
+. Gestion des priorités
+
+. Authentification avec Laravel Breeze
+
+. Génération de rapports PDF
+
+. Importation et exportation de données en CSV
+
+. Tests unitaires sur les contrôleurs
+
+##Commandes utilisées dans le projet
+
+-Création des modèles et migrations
+
+php artisan make:model Task -m
+php artisan make:model Category -m
+
+-Création des contrôleurs
+
+php artisan make:controller TaskController --resource
+php artisan make:controller CategoryController --resource
+
+
+-Exportation et importation CSV
+Le projet utilise maatwebsite/excel pour gérer les fichiers CSV.
+Installation :
+composer require maatwebsite/excel
+
+php artisan make:export TasksExport --model=Task
+
+-Génération du PDF
+Le projet utilise barryvdh/laravel-dompdf pour générer des rapports PDF.
+Installation :
+composer require barryvdh/laravel-dompdf
+
+
+
+
+-Création des tests
+
+php artisan make:test TaskControllerTest
+
+
+
