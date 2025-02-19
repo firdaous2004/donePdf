@@ -11,29 +11,34 @@
 
 Ce projet est une application de gestion des tâches développée avec Laravel 10. Il permet la création, la mise à jour, la suppression et l'organisation des tâches par catégories et priorités. Il inclut également des fonctionnalités d'authentification, de génération de PDF et d'exportation/importation de fichiers CSV.
 
-##Fonctionnalités
+
+## Fonctionnalités
+
 . Gestion des tâches (CRUD)
 
 . Gestion des catégories
 
 . Gestion des priorités
 
-. Authentification avec Laravel Breeze
+. Authentification a
 
 . Génération de rapports PDF
 
-. Importation et exportation de données en CSV
+. Exportation de données en CSV
 
-. Tests unitaires sur les contrôleurs
+. Tests unitaires sur TaskController
 
-##Commandes utilisées dans le projet
+## Commandes utilisées dans le projet
 
 -Création des modèles et migrations
+
 
 php artisan make:model Task -m
 php artisan make:model Category -m
 
 -Création des contrôleurs
+
+
 
 php artisan make:controller TaskController --resource
 php artisan make:controller CategoryController --resource
@@ -43,6 +48,8 @@ php artisan make:controller CategoryController --resource
 Le projet utilise maatwebsite/excel pour gérer les fichiers CSV.
 Installation :
 composer require maatwebsite/excel
+
+
 
 php artisan make:export TasksExport --model=Task
 
