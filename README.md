@@ -30,10 +30,20 @@ Ce projet est une application de gestion des tâches développée avec Laravel 1
 
 ## Commandes utilisées dans le projet
 
+
+
 -Création des modèles et migrations
 
 
+
+
+
+
 php artisan make:model Task -m
+
+
+
+
 php artisan make:model Category -m
 
 -Création des contrôleurs
@@ -41,27 +51,38 @@ php artisan make:model Category -m
 
 
 php artisan make:controller TaskController --resource
+
+
+
 php artisan make:controller CategoryController --resource
+
+
+
 
 
 -Exportation et importation CSV
 Le projet utilise maatwebsite/excel pour gérer les fichiers CSV.
 Installation :
-composer require maatwebsite/excel
 
+
+composer require maatwebsite/excel
 
 
 php artisan make:export TasksExport --model=Task
 
 -Génération du PDF
+
+
 Le projet utilise barryvdh/laravel-dompdf pour générer des rapports PDF.
 Installation :
+
 composer require barryvdh/laravel-dompdf
 
 
 
 
 -Création des tests
+
 
 php artisan make:test TaskControllerTest
 
